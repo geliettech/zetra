@@ -30,6 +30,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
           />
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-white">
+          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
           <Link
             href="/"
             className="cursor-pointer flex items-center gap-1 p-4"
