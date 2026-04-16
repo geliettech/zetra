@@ -33,7 +33,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
           <Link
             href="/"
-            className="cursor-pointer flex items-center gap-1 p-4"
+            className="cursor-pointer flex items-center gap-1 px-4"
           >
             <Image
               src="/icons/logo.svg"
