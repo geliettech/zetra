@@ -13,7 +13,7 @@ const inter = Inter({
 const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-ibm-plex-serif",
   subsets: ["latin"],
-  weight: ['400', '700']
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
