@@ -10,7 +10,7 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
         <div className="bg-gradient-mesh profile-banner" />
         <div className="profile">
           <div className="profile-img shadow-profile flex-center">
-            <span className="text-5xl font-bold text-blue-500">
+            <span className="text-5xl font-bold text-purple-500">
               {user?.firstName[0]}
             </span>
           </div>

@@ -13,7 +13,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
           <Image
-            src="/icons/logo.svg"
+            src="/icons/logo.png"
             alt="Zetra Logo"
             width={34}
             height={34}
