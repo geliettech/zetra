@@ -5,45 +5,52 @@
 ========================= */
 @theme {
   /* Colors */
-  --color-bankGradient: #7a01fe;
+  /* PRIMARY BRAND (from logo) */
+--color-bankGradient: #7310A3; /* updated main brand purple */
 
-  --color-indigo-500: #6172f3;
-  --color-indigo-700: #3538cd;
+/* INDIGO (shifted closer to logo tone) */
+--color-indigo-500: #5F367F;
+--color-indigo-700: #4A1470;
 
-  --color-success-25: #f6fef9;
-  --color-success-50: #ecfdf3;
-  --color-success-100: #d1fadf;
-  --color-success-600: #039855;
-  --color-success-700: #027a48;
-  --color-success-900: #054f31;
+/* SUCCESS (kept — no relation to logo) */
+--color-success-25: #f6fef9;
+--color-success-50: #ecfdf3;
+--color-success-100: #d1fadf;
+--color-success-600: #039855;
+--color-success-700: #027a48;
+--color-success-900: #054f31;
 
-  --color-pink-25: #fef6fb;
-  --color-pink-100: #fce7f6;
-  --color-pink-500: #ee46bc;
-  --color-pink-600: #dd2590;
-  --color-pink-700: #c11574;
-  --color-pink-900: #851651;
+/* PINK (aligned with logo glow) */
+--color-pink-25: #fef6fb;
+--color-pink-100: #fce7f6;
+--color-pink-500: #DD35F3; /* from logo */
+--color-pink-600: #A43DCB; /* adjusted */
+--color-pink-700: #7310A3; /* blended purple */
+--color-pink-900: #4A1470;
 
-  --color-purple-25: #fcfaff;
-  --color-purple-100: #f4ebff;
-  --color-purple-500: #9e77ed;
-  --color-purple-600: #7f56d9;
-  --color-purple-700: #6941c6;
-  --color-purple-900: #42307d;
-  
-  
-  --color-gray-25: #fcfcfd;
-  --color-gray-200: #eaecf0;
-  --color-gray-300: #d0d5dd;
-  --color-gray-500: #667085;
-  --color-gray-600: #475467;
-  --color-gray-700: #344054;
-  --color-gray-900: #101828;
+/* PURPLE (core palette from logo) */
+--color-purple-25: #fcfaff;
+--color-purple-100: #f4ebff;
+--color-purple-500: #A43DCB;
+--color-purple-600: #7310A3;
+--color-purple-700: #4A1470;
+--color-purple-900: #2F094F;
 
-  --color-black-1: #00214f;
-  --color-black-2: #344054;
+/* GRAY (kept neutral) */
+--color-gray-25: #fcfcfd;
+--color-gray-200: #eaecf0;
+--color-gray-300: #d0d5dd;
+--color-gray-500: #667085;
+--color-gray-600: #475467;
+--color-gray-700: #344054;
+--color-gray-900: #101828;
 
-  --color-sky-1: #f3f9ff;
+/* BLACK (slightly harmonized) */
+--color-black-1: #2F094F;
+--color-black-2: #344054;
+
+/* SKY  */
+--color-sky-1: #f3f9ff;
 
   /* Fonts */
   --font-inter: var(--font-inter);
@@ -118,12 +125,12 @@
 @layer components {
   /* Backgrounds */
   .bg-bank-gradient {
-    background: linear-gradient(90deg, #8800ff 0%, #a43bff 100%);
-  }
+  background: linear-gradient(90deg, #7310A3 0%, #DD35F3 100%);
+}
 
-  .bg-bank-green-gradient {
-    background: linear-gradient(90deg, #43007e 0%, #6b438e 100%);
-  }
+.bg-bank-green-gradient {
+  background: linear-gradient(90deg, #2F094F 0%, #5F367F 100%);
+}
 
   .bg-gradient-mesh {
     background-image: url("/icons/gradient-mesh.svg");
