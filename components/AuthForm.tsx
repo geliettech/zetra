@@ -17,9 +17,6 @@ import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { signIn, signUp } from "@/lib/actions/user.actions";
 
-
-
-
 const AuthForm = ({ type }: { type: string }) => {
   const router = useRouter();
   const [user, setUser] = useState(null);
@@ -54,44 +51,23 @@ const AuthForm = ({ type }: { type: string }) => {
     //   } as React.CSSProperties,
     // });
 
-    
-    // Sign up
     try {
       console.log(data);
-      // Sign up with Appwrite & create plain link
-      // if(type === 'sign-up'){
-      //   const userData = {
-      //     const newUser = await signUp(data)
+      // sign Up & sign In
+      if (type === "sign-up") {
+        const newUser = await signUp(data);
+        setUser(newUser);
+      }
+      // else {
+      //   const response = await signIn({
+      //     email: data.email,
+      //     password: data.password,
+      //   });
 
-      //     setUser(newUser)
-      //   }
+      //   if (response) router.push("/");
       // }
-  
-// sign In
-      // if(type === 'sign-in'){
-      //   const userData = {
-      //     const response = await signIn({
-      //       email: data.email,
-      //       password: data.password,
-      //     })
-      //     if(response) router.push("/")
-      //   }
-      // }
-      
-if (type === "sign-up") {
-  const newUser = await signUp(data);
-  setUser(newUser);
-} else {
-  const response = await signIn({
-    email: data.email,
-    password: data.password,
-  });
-
-  if (response) router.push("/");
-}
-
     } catch (error) {
-      console.log(error)
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
